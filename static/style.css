@@ -1,0 +1,23 @@
+#app {
+  padding-top: 100px;
+}
+
+.features {
+  overflow-x: auto;
+  white-space: nowrap;
+  text-align: center;
+  position: fixed;
+  top: 53px;
+  right: 0;
+  left: 0;
+  z-index: 1;
+  background-color: #FFF;
+}
+
+.features a:hover,
+.features a:active,
+.features a:focus,
+.features a.active {
+  background-color: #00BFFF;
+  color: #FFF;
+}
