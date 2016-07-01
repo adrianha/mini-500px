@@ -3,7 +3,10 @@ var webpack = require('webpack');
 
 module.exports = {
   devtool: 'cheap-module-source-map',
-  entry: './src/index',
+  entry: {
+    app: './src/index',
+    vendor: ['react', 'redux', 'react-redux', 'react-router', 'axios'],
+  },
   output: {
     path: __dirname + '/static/',
 		filename: 'bundle.js',
